@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bouncer : MonoBehaviour
 {
     int health = 100;
-    float alpha = 1;
+
     int Health { get { return health; } }
 
     SpriteRenderer spriteRenderer;
@@ -21,10 +21,10 @@ public class Bouncer : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         health -= 10;
-        alpha -= 0.1f;
 
-        
-        spriteRenderer.color = new Color(1, 1, 1, alpha);
+        Color spriteColor = spriteRenderer.color;
+        spriteColor.a -= 0.1f;
+        spriteRenderer.color = spriteColor;
 
         if(health <= 0)
         {
