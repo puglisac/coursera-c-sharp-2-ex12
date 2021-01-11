@@ -1,4 +1,4 @@
-# Exercise 7: Gravity, It's Just a Theory
+# Exercise 12: The Bouncer
 
 This is an exercise for the coursera course [More C# Programming and Unity](https://www.coursera.org/learn/more-programming-unity)
 
